@@ -29,3 +29,22 @@ nome = "Um nome qualquer"
 nome[0]
 nome[6]
 nome[-3]
+print(nome[-3])
+#n conta os 4 primeiros 
+nome[4:]
+print(nome[4:])
+#n pega os ultimos 5
+print(nome[-5:])
+#vai pegar até o caracter 4, no entando ele n pega o ultimo elemento, é o intervalo de valores, rpimeiro pega mas o ultimo n 
+print(nome[:4])
+#pega um intervalo de valores
+print(nome[2:5])
+#pega tudo 
+numero = '123456789'
+print(numero[::])
+#pula numeros
+print(numero[::2])
+#inverter uma string 
+print(numero[::-1])
+#pula os 3 primeiros e depois vai de dois em dois 
+print(numero[3::2])
