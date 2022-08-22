@@ -59,7 +59,7 @@ lista.append(1)
 lista.append(5)
 lista[0]
 print(lista)
-len(lista)
+print(len(lista))
 #Aqui vc inseriu uma lista dentro de outra 
 nova_lista = [1,5, 'Ana', 'Bia', ['C#', 'Python', 'Node'], 3.14]
 print(nova_lista[3])
