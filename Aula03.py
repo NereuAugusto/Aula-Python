@@ -49,9 +49,11 @@ print(nome[::-1])
 
 frase = 'Python é uma linguagem excelente'
 
-#for pessoa in range(1,32):
- #   for y in range(1,11)
-
+#2
+frase = "Python é uma linguagem excelente"
+print('py' in frase)
+print('ing' in frase) 
+print('zzz' in frase )
 
 #3
 
@@ -63,7 +65,7 @@ sal_comp = (despesas/salario)*100
 print(sal_comp)
 
 #4
-
+#inut é lido como string
 x = int(input('Valor de X: ')) 
 y = int(input('Valor de y: '))
 
@@ -83,6 +85,19 @@ elif 66 <= idade <= 100:
 else:
     print('Centenário ')
 
+#ouuuuuu
+idade = int(input('A idade da pessoa é: '))
+
+if 0 <= idade < 18:
+    print('Menor de idade')
+elif idade in range(18, 65):
+    print('Aulto') 
+elif idade in range(66, 101):
+   print('Melhor idade')
+elif idade >= 101:
+    print('Centenário')
+else:
+    print('idade inválida')
 
 #6
 
@@ -100,7 +115,33 @@ for nomenclatura in nome:
 
 sorteio = randint(0,9)
 
+#8
+
 valor = int(input('Insira um número de 0 a 9: '))
 if valor == sorteio:
     print("Número secreto x foi encontrado!")
 else: print('Errou vaca!')
+
+#ouuuuuu
+
+#from random import randit 
+# sorteio = randit(0,9)
+#resposta = int(input('Digite um valor: '))
+
+#while respota != sorteio:
+ #   resposta = int(input('Digite um valor: '))
+
+#print(f' O numero secreto {sorteio} foi encontrado')
+
+#9
+
+x = int(input('digite: '))
+lista = []
+lista.append(0)
+lista.append(1)
+
+for number in range(2, 9 + x):
+#item atual = item atual - 1 + item atual - 2 posições 
+    lista.append(lista[number - 1] + lista[number - 2])
+
+print(lista[x-1:])
